@@ -544,6 +544,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Following'**
   String get following;
+
+  /// No description provided for @group_call_come_soon.
+  ///
+  /// In en, this message translates to:
+  /// **'Group call feature coming soon!'**
+  String get group_call_come_soon;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

@@ -232,4 +232,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get following => 'Following';
+
+  @override
+  String get group_call_come_soon => 'Group call feature coming soon!';
 }

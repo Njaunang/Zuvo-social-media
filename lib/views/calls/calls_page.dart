@@ -66,7 +66,12 @@ class _CallsPageState extends State<CallsPage> {
             stream: FirebaseFirestore.instance.collection('users').snapshots(),
             builder: (context, snapshot) {
               if (snapshot.connectionState == ConnectionState.waiting) {
-                return const Center(child: CircularProgressIndicator());
+                return Center(
+                  child: CircularProgressIndicator(
+                    strokeWidth: 2,
+                    valueColor: AlwaysStoppedAnimation(cyberRose),
+                  ),
+                );
               }
 
               if (!snapshot.hasData) {
@@ -136,7 +141,12 @@ class _CallsPageState extends State<CallsPage> {
             stream: FirebaseFirestore.instance.collection('users').snapshots(),
             builder: (context, snapshot) {
               if (snapshot.connectionState == ConnectionState.waiting) {
-                return const Center(child: CircularProgressIndicator());
+                return Center(
+                  child: CircularProgressIndicator(
+                    strokeWidth: 2,
+                    valueColor: AlwaysStoppedAnimation(cyberRose),
+                  ),
+                );
               }
 
               if (!snapshot.hasData) {
@@ -231,7 +241,7 @@ class _CallsPageState extends State<CallsPage> {
           appID: appID,
           appSign: appSign,
           userID: user?.uid ?? '',
-          userName: user?.displayName ?? 'User',
+          userName: user?.displayName ?? AppLocalizations.of(context)!.user,
           callID: 'voice_${user?.uid}_$recipientId',
           config: ZegoUIKitPrebuiltCallConfig.oneOnOneVoiceCall(),
         ),
@@ -251,7 +261,7 @@ class _CallsPageState extends State<CallsPage> {
           appID: appID,
           appSign: appSign,
           userID: user?.uid ?? '',
-          userName: user?.displayName ?? 'User',
+          userName: user?.displayName ?? AppLocalizations.of(context)!.user,
           callID: 'video_${user?.uid}_$recipientId',
           config: ZegoUIKitPrebuiltCallConfig.oneOnOneVideoCall(),
         ),
@@ -263,8 +273,8 @@ class _CallsPageState extends State<CallsPage> {
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
-        title: const Text('Create Group Call'),
-        content: const Text('Group call feature coming soon!'),
+        title: Text(AppLocalizations.of(context)!.create_group_call),
+        content: Text(AppLocalizations.of(context)!.group_call_come_soon),
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(context),
