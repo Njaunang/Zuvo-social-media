@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "183417680673",
+    "project_id": "zuvo-d59a2",
+    "storage_bucket": "zuvo-d59a2.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:183417680673:android:bb718a3fa395f03295c460",
+        "android_client_info": {
+          "package_name": "com.example.zuvo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "183417680673-00sg0b52tovnqdjmcs8tqhsved92rtpp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.zuvo",
+            "certificate_hash": "9600c777c722157ac2531c3b119fbd0d2eaae8ea"
+          }
+        },
+        {
+          "client_id": "183417680673-eoohu9rvn28m88jfn062j0coh15hd7mf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTOsI02HjeXlODhr_2jYQSwlUBKIpY57w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "183417680673-eoohu9rvn28m88jfn062j0coh15hd7mf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
