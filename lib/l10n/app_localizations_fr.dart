@@ -235,4 +235,7 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get group_call_come_soon => 'La fonctionnalité d\'appel de groupe sera bientôt disponible !';
+
+  @override
+  String get fail_to_add_comment => 'Failed to add comment';
 }

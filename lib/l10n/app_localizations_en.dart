@@ -235,4 +235,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get group_call_come_soon => 'Group call feature coming soon!';
+
+  @override
+  String get fail_to_add_comment => 'Impossible d\'ajouter un commentaire';
 }

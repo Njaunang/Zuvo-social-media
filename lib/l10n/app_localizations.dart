@@ -550,6 +550,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Group call feature coming soon!'**
   String get group_call_come_soon;
+
+  /// No description provided for @fail_to_add_comment.
+  ///
+  /// In en, this message translates to:
+  /// **'Impossible d\'ajouter un commentaire'**
+  String get fail_to_add_comment;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {
