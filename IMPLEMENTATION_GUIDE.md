@@ -1,5 +1,12 @@
 # Zuvo Social Media Platform - Implementation Guide
 
+
+* Get your google-service.json in the firebase console
+1. Create a new project in firebase
+2. Setup the login with email and password provider
+3. Setup the finger print certificat SHA
+4. download the google-service.json and place it in the location `android/app/google-service.json`
+
 ## ✅ Completed Features
 
 ### 1. **Bottom Navigation Bar Navigation**
